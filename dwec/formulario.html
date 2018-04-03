@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Tarea DWEC Formulario</title>
+	<script src="validacion.js"></script>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<h1>Formulario de Registro</h1>
+	<div class="contenedor">
+		<h4>Datos Personales</h4>
+		<div class="personal">
+			
+			<form action="" method="post" id="formulario">
+				<label for="dni">DNI:</label>
+				<input type="text" name="dni" id="dni"><br>
+				<label for="nombre">Nombre:</label>
+				<input type="text" name="nombre" id="nombre"><br>
+				<label for="edad">Edad:</label>
+				<input type="text" name="edad" id="edad"><br>
+				<label for="correo">Correo electronico:</label>
+				<input type="text" name="correo" id="correo">
+		</div>
+		<h4>Datos del Curso</h4>
+		<div class="curso">
+			
+				<label for="fecha">Fecha:</label>
+				<input type="text" name="fecha" id="fecha"><br>
+				Selecciona el curso a realizar:
+				<select name="selecurso" id="selecurso">
+					<option value="Html">Html</option>
+					<option value="CSS">CSS</option>
+					<option value="Javascript">Javascript</option>
+				</select><br><br>
+				<input type="checkbox" name="impreso" id="impreso">
+				<label for="impreso">Desea recibir el material impreso</label><br><br>
+				<label for="regalo">Selecciona un regalo:</label><br>
+				<input type="radio" name="regalo" id="smartwach" checked ><label for="smartwach">Smartwatch</label> <br>
+				<input type="radio" name="regalo" id="taza"><label for="taza">Taza</label> <br>
+				<input type="radio" name="regalo" id="pendrive"><label for="pendrive">Pendrive</label> <br><br>
+				<input type="submit" value="enviar" name="enviar" id="enviar">
+			</form>
+		</div>
+	</div>	
+</body>
+</html>
